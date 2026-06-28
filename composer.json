@@ -1,0 +1,25 @@
+{
+  "name": "hala-abdulmottleb/bitmask-permissions",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hala Abdulmottleb"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "illuminate/database": "^10.0|^11.0|^12.0",
+    "illuminate/support": "^10.0|^11.0|^12.0"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.0",
+    "orchestra/testbench": "^8.0|^9.0|^10.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "HalaAbdulmottleb\\BitmaskPermissions\\BitmaskPermissionsServiceProvider"
+      ]
+    }
+  }
+}
