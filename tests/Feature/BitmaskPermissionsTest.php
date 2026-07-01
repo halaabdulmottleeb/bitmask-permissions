@@ -15,8 +15,8 @@ it('grants a single permission on a resource instance', function (): void {
 });
 
 it('revoke permission from a resource instance', function (): void {
-    $user = User::query()->create(['name' => 'Hala']);
-    $post = Post::query()->create(['title' => 'Hello']);
+    $user = User::query()->create(['name' => 'first user']);
+    $post = Post::query()->create(['title' => 'Post Title']);
 
    PermissionGrant::query()->create([
         'subject_id' => $user->id,
