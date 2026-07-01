@@ -14,10 +14,6 @@ class PermissionGrant extends Model
 {
     protected $guarded = [];
 
-    protected $casts = [
-        'mask' => 'integer',
-    ];
-
     /**
      * @return MorphTo<Model, $this>
      */
