@@ -39,6 +39,6 @@ return new class extends Migration
 
     private function tableName(): string
     {
-        return config('bitmask-permissions.table', 'permission_grants');
+        return config()->string('bitmask-permissions.table', 'permission_grants');
     }
 };
