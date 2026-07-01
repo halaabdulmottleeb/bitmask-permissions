@@ -25,7 +25,7 @@ Traditional permission packages store each grant as one or more rows across seve
 ## Installation
 
 ```bash
-composer require hala-abdulmottleb/bitmask-permissions
+composer require halaabdulmottleeb/bitmask-permissions
 ```
 
 The service provider is auto-discovered. Publish and run the migration:
