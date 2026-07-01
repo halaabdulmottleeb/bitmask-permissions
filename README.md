@@ -20,7 +20,7 @@ Traditional permission packages store each grant as one or more rows across seve
 ## Requirements
 
 - PHP `^8.2`
-- Laravel 10, 11, or 12 (`illuminate/database`, `illuminate/support`)
+- Laravel 10, 11, 12 ,or 13 (`illuminate/database`, `illuminate/support`)
 
 ## Installation
 
