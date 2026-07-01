@@ -18,14 +18,13 @@ it('revoke permission from a resource instance', function (): void {
     $user = User::query()->create(['name' => 'first user']);
     $post = Post::query()->create(['title' => 'Post Title']);
 
-   PermissionGrant::query()->create([
+    PermissionGrant::query()->create([
         'subject_id' => $user->id,
-        'subject_type' => (new User())->getMorphClass(),
+        'subject_type' => (new User)->getMorphClass(),
         'resource_id' => $post->id,
-        'resource_type' => (new Post())->getMorphClass(),
+        'resource_type' => (new Post)->getMorphClass(),
         'mask' => PostPermission::READ->value,
     ]);
     $user->revokePermission(PostPermission::READ->value, $post);
     expect($user->hasPermissionTo(PostPermission::READ->value, $post))->toBeFalse();
 });
-

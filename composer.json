@@ -1,5 +1,8 @@
 {
-  "name": "hala-abdulmottleb/bitmask-permissions",
+  "name": "halaabdulmottleeb/bitmask-permissions",
+  "description": "A Laravel authorization package that uses bitmask-based permissions to support object-level (per-resource) access control.",
+  "type": "library",
+  "keywords": ["laravel", "bitmask", "permissions"],
   "license": "MIT",
   "authors": [
     {
